@@ -1,0 +1,3 @@
+module Hello0 where
+
+name = "Gottlob"

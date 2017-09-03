@@ -1,0 +1,13 @@
+module Hello where
+
+import Hello0
+
+catStr :: [String] -> String
+catStr [] = ""
+catStr (h:tail) = h ++ (catStr tail)
+
+main :: [String] -> IO ()
+main args =
+  do
+    println (catStr ("Hello: " : args))
+    println ("Love, " ++ name)
